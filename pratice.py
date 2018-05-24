@@ -126,12 +126,11 @@ while(True):
         elif int(number) > goal:
             print("더 낮게")
             max = int(number)
-            game_count += 1
         else:
             print("더 높게")
             min = int(number)
-            game_count += 1
 
+        game_count += 1
         print(str(min) + "-" + str(max))
 
     restart = input('다시 하시겠습니까(y/n)>>')
