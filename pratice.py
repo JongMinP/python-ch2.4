@@ -121,11 +121,8 @@ while(True):
 
         if int(number) == goal:
             print("맞았습니다.")
-            restart = input('다시 하시겠습니까(y/n)>>')
-            if(restart.lower() == 'y'):
-                break
-            else:
-                break
+            break
+
         elif int(number) > goal:
             print("더 낮게")
             max = int(number)
@@ -137,6 +134,7 @@ while(True):
 
         print(str(min) + "-" + str(max))
 
-    if restart.lower() =='n':
+    restart = input('다시 하시겠습니까(y/n)>>')
+    if (restart.lower() != 'y'):
         break
 
