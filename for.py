@@ -55,6 +55,7 @@ else:
 
 print('------------------')
 
+
 # 구구단
 
 for i in range(1,10):
@@ -64,11 +65,53 @@ for i in range(1,10):
 
 
 
+# 삼각형
+for i in range(10):
+    for j in range(0, i+1):
+        print('*', end='')
+    else:
+        print('')
 
+print('----------')
+# 역삼각형
+for i in range(10, 0, -1):
+    for j in range(0, i):
+        print('*', end='')
+    else:
+        print('')
 
+print('----------')
 
+for i in range(10, 0, -1):
+    for j in range(0, i):
+        print(' ', end='')
+    for k in range(j, 10):
+        print('*', end='')
+    else:
+        print('')
 
+print('----------')
 
+for i in range(10, 0, -1):
+    for j in range(0, i):
+        print('*', end='')
+    for k in range(j, 10):
+        print(' ', end='')
+    else:
+        print('')
+
+print('----------')
+
+# 삼각형 별해
+# 중첩 for문을 사용하지 않고 작성 해보기
+for i in range(1, 10):
+    print('*'*i, end='\n')
+
+print('----------')
+# 역삼각형 별해
+# 중첩 for문을 사용하지 않고 작성 해보기
+for i in range(9, 0, -1):
+    print('*'*i, end='\n')
 
 
 
